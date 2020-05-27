@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="gcc的编译过程, star">
+    <meta name="keywords" content="C语言常见错误举例, star">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>gcc的编译过程 | star</title>
+    <title>C语言常见错误举例 | star</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">gcc的编译过程</h1>
+                    <h1 class="description center-align post-title">C语言常见错误举例</h1>
                 </div>
             </div>
         </div>
@@ -466,10 +466,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="gcc编译过程"><a href="#gcc编译过程" class="headerlink" title="gcc编译过程"></a>gcc编译过程</h1><p>gcc - o output input<br>预处理：<br>gcc -E：只激活预处理,这个不生成文件, 你需要把它重定向到一个输出文件里面。<br><img src="/img/%E9%A2%84%E5%A4%84%E7%90%86.png" alt=""></p>
-<p>编译：<br>gcc -S：只激活预处理和编译，就是指把文件编译成为汇编代码。<br><img src="/img/%E7%BC%96%E8%AF%91.png" alt=""></p>
-<p>汇编：<br>gcc -c：只激活预处理,编译,和汇编,也就是他只把程序做成obj文件<br><img src="/img/%E6%B1%87%E7%BC%96.png" alt=""></p>
-<p>链接：<br>Gcc- -o：制定目标名称, 默认的时候, gcc 编译出来的文件是 a.out</p>
+                <h1 id="C语言常见错误举例"><a href="#C语言常见错误举例" class="headerlink" title="C语言常见错误举例"></a>C语言常见错误举例</h1><p>预处理错误：<br>#include “name”<br>#include <name><br>not found:”” 在当前目录下查找<br>解决方法：用gcc -I  </p>
+<p>编译错误：<br>    语法错误</p>
+<p>链接出错：<br>    undefined reference to “XXXX”<br>    解决方法：<br>    <img src="/img/%E5%A4%84%E7%90%86gcc%E5%8E%9F%E6%9D%90%E6%96%99%E4%B8%8D%E5%A4%9F.jpeg" alt=""></p>
 
             </div>
             <hr/>
@@ -495,7 +494,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://qijiahao0426.github.io/2020/05/27/gcc%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/">https://qijiahao0426.github.io/2020/05/27/gcc%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</a>
+                    <a href="https://qijiahao0426.github.io/2020/05/27/C%E8%AF%AD%E8%A8%80%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E4%B8%BE%E4%BE%8B/">https://qijiahao0426.github.io/2020/05/27/C%E8%AF%AD%E8%A8%80%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E4%B8%BE%E4%BE%8B/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -706,9 +705,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/05/27/C%E8%AF%AD%E8%A8%80%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E4%B8%BE%E4%BE%8B/">
                     <div class="card-image">
@@ -728,9 +728,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -739,6 +739,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -761,25 +762,26 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/23/nginx%E9%85%8D%E7%BD%AE%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/">
+                <a href="/2020/05/27/gcc%E7%9A%84%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="nginx配置的二三事">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="gcc的编译过程">
                         
-                        <span class="card-title">nginx配置的二三事</span>
+                        <span class="card-title">gcc的编译过程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            关于nginx配置的二三事
-在配置的时候，不要忘记在proxy_pass最后加上 “/”123location &#x2F;interface&#x2F; &#123;        proxy_pass http:&#x2F;&#x2F;
+                            gcc编译过程gcc - o output input预处理：gcc -E：只激活预处理,这个不生成文件, 你需要把它重定向到一个输出文件里面。
+编译：gcc -S：只激活预处理和编译，就是指把文件编译成为汇编代码。
+汇编：gcc -c：只
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-27
                             </span>
                         <span class="publish-author">
                             
@@ -788,6 +790,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/gcc/">
+                        <span class="chip bg-color">gcc</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/">
+                        <span class="chip bg-color">物联网</span>
+                    </a>
+                    
                 </div>
                 
             </div>
